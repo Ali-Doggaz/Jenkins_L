@@ -4,6 +4,7 @@ pipeline {
 
     environment{
         NEW_VERSION = "1.3.0"
+        SERVER_CREDENTIALS = credentials('global_git')
     }
 
     stages{
@@ -13,6 +14,7 @@ pipeline {
             steps{
                 echo "building the application..."
                 echo "version ${NEW_VERSION}"
+                echo " deploying with ${SERVER_CREDENTIALS}"
             }
                 
         }
