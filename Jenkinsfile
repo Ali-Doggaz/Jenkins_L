@@ -20,7 +20,8 @@ pipeline {
                 echo "building the application..."
                 echo "version ${NEW_VERSION}"
                 echo " deploying with ${SERVER_CREDENTIALS}"
-            }
+                echo "testing param ${Param1}"
+            }P
                 
         }
 
